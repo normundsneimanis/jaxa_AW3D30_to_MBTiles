@@ -1,7 +1,7 @@
 # jaxa_AW3D30_to_MBTiles
 Scripts to create a mbtiles file from jaxa AW3D30 elevation images. To download jaxa data please register an account with them first.
 
-- Download all the jaxa DEM images using `download_zips.sh`. This downloads all the zip files in `file_list_zip.txt`. **Be sure to update the `USER` and `PASSWORD` before running `download_zips.sh`**
+- Download all the jaxa DEM images using `download_zips.sh`. This downloads all the zip files in `file_list_zip.txt`. **Be sure to `export CREDENTIALS=user@domain:password before running `download_zips.sh`**
 
 - Build custom docker image `docker build -t terrain:latest docker/` and run container with `docker run -ti -v $PWD:$PWD -w $PWD --rm terrain:latest`
 
